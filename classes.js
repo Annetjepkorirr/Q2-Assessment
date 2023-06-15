@@ -17,33 +17,52 @@
                 // constructor
 
 
-class StoryTelling{
-    constructor(storyLength, moralLesson, ageGroup){
-        this.storyLength = storyLength
-        this.moralLesson = moralLesson
-        this.ageGroup = ageGroup
-    }
-
-    predictAgeGroup(){
-        if (`${this.age}`) {
-            
-        }
-
-    }
-}     
-
-class StoryTeller {
-    constructor(name, language) {
-      this.name = name;
-      this.language = language;
+class Story {
+    constructor(title, moralLesson, length, ageGroup) {
+      this.title = title;
+      this.moralLesson = moralLesson;
+      this.length = length;
+      this.ageGroup = ageGroup;
     }
   
-    tellStory(story) {
-      console.log(`Hello, I am ${this.name} and my story for toaday will be from ${this.language}.`);
-      story.tellStory();
+   
+    display() {
+      console.log(`Title: ${this.title}`);
+      console.log(`Content: ${this.moralLesson}`);
+      console.log(`Length: ${this.length}`);
+      console.log(`Age Group: ${this.ageGroup}`);
     }
+  }
+  
+ 
+  class StoryTeller {
+    constructor(name) {
+      this.name = name;
+    }
+  
+    
+    tellStory(story) {
+      console.log(`${this.name} will tell a story`);
+      story.display();
+    }
+  }
+  
+ 
 
-}
+  
+ 
+  const story = new Story(
+    "The Lion and the Hare",
+    "Once upon a time...",
+    "Medium",
+    "Children"
+  );
+
+  
+  story.display();
+
+  
+
 
 
 // **African Cuisine:** You're creating a recipe app specifically for African cuisine.
