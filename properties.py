@@ -46,26 +46,52 @@ class Student:
 
     def display_student_info(self):
         return f"name:{self.name},age:{self.age},average:{self.calculate_average_grade()}"
-        # print(f"Name: {self.name}")
-        # print(f"Age: {self.age}")
-        # print(f"Grades: {self.grades}")
-
+       
     def has_passed(self):
          average = self.calculate_average_grade()
          if average >= 50:
              return f"{self.name}: passed"
          else:
              return f"{self.name}: is below average"
-       
-# Creating objects for the Student class
-student1 = Student("John Doe", 18, [80, 75, 90, 85])
-student2 = Student("Jane Smith", 17, [70, 65, 80, 75])
+student1 =Student("Jane",20,[30,40,50])    
+print(student1.calculate_average_grade()) 
+print(student1.display_student_info())  
+print(student1.has_passed())
 
-# Demonstrating the usage of methods
-student1.display_student_info()
-print(f"Average Grade: {student1.calculate_average_grade()}")
-print(f"Has Passed: {student1.has_passed()}")
 
-student2.display_student_info()
-print(f"Average Grade: {student2.calculate_average_grade()}")
-print(f"Has Passed: {student2.has_passed()}")
+class FlightBooking:
+    available_flight =[]
+    def __init__(self,destination,date,flight_number,seats):
+        self.destination = destination
+        self.date = date
+        self.flightNumber = flightNumber
+        self.seats = seats
+    
+    def  check_available_flights(self,date,destination):
+        for flight in available_flight:
+            if date == self.date and destination == self.destination:
+                return f"flight is available"
+        
+    def reserve_seat(self,seat):
+        if seat!= seat:
+            return f"The seat is available"
+        else:
+            return f"SEat is not available"
+    
+    def display_passanger_info(self,name,email,phone,depature_time,return_time):
+        return f"Name: {name},"
+            
+               
+        
+# # Creating objects for the Student class
+# student1 = Student("John Doe", 18, [80, 75, 90, 85])
+# student2 = Student("Jane Smith", 17, [70, 65, 80, 75])
+
+# # Demonstrating the usage of methods
+# student1.display_student_info()
+# print(f"Average Grade: {student1.calculate_average_grade()}")
+# print(f"Has Passed: {student1.has_passed()}")
+
+# student2.display_student_info()
+# print(f"Average Grade: {student2.calculate_average_grade()}")
+# print(f"Has Passed: {student2.has_passed()}")

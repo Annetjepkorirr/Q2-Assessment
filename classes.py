@@ -318,6 +318,16 @@ print(product2.calculate_total_value())
 
 product3 = Product("Watermelom", 50, 3)
 print(product3.calculate_total_value())
+
+class Book:
+    def __init__(self,title,authors,copies):
+        self.title = title
+        self.authors = authors
+        self.copies = copies
+        
+    def __str__(self):
+        return f""    
+
 # total_value1 = product1.calculate_total_value()
 # print(f"The total value of {product1.name} is ${total_value1}")
 

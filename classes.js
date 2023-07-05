@@ -130,15 +130,6 @@ console.log(product.totalValue());
 
 
 
-
-
-
-
-
-
-
-
-
 class Student {
     constructor(name, age, grades) {
       this.name = name;
@@ -167,7 +158,7 @@ class Student {
   
   // Creating objects for the Student class and demonstrating the usage of methods
   
-  const student1 = new Student("John Doe", 18, [80, 75, 90, 85]);
+  const student1 = new Student("Mary", 18, [80, 75, 90, 85]);
   student1.displayStudentInfo();
   console.log(`Average Grade: ${student1.calculateAverageGrade()}`);
   console.log(`Has Passed: ${student1.hasPassed()}`);
@@ -178,6 +169,15 @@ class Student {
   console.log(`Has Passed: ${student2.hasPassed()}`);
 
 
+class Library{
+    constructor(books){
+        this.books =[]
+    }
+    addBooks(author,title,year){
+        
+    }
+    
+}  
 // class Story {
 //     constructor(title, moralLesson, length, ageGroup) {
 //       this.title = title;
@@ -316,68 +316,5 @@ class Student {
 //     }
 
 // }
-
-
-// Implement a class called Student with attributes for name, age, and grades (a
-//     list of integers). Include methods to calculate the average grade, display the
-//     student information, and determine if the student has passed (average grade >=
-//     60). Create objects for the Student class and demonstrate the usage of these
-//     methods.
-
-
-// class Student {
-//   constructor(name, age, grades) {
-//     this.name = name;
-//     this.age = age;
-//     this.grades = grades;
-//   }
-
-//   calculateAverageGrade() {
-//     if (this.grades.length === 0) {
-//       return 0;
-//     }
-//     const sum = this.grades.reduce((total, grade) => total + grade);
-//     return sum / this.grades.length;
-//   }
-
-//   studentsdetails() {
-//     console.log(`Name: ${this.name}`);
-//     console.log(`Age: ${this.age}`);
-//     console.log(`Grades: ${this.grades.join(', ')}`);
-//     console.log(` The Average Grade: ${this.calculateAverageGrade()}`);
-//   }
-
-//   ifPassed() {
-//     return this.calculateAverageGrade() >= 60;
-//   }
-// }
-
-
-// const student1 = new Student('Mary', 16, [30,40,60]);
-// const student2 = new Student('Peter', 14, [45,60,70]);
-// const student3 = new Student('Tina', 17, [30,70,90]);
-
-
-// student1.studentsdetails();
-// console.log('pass:', student1.ifPassed());
-
-// student2.displayStudentInfo();
-// console.log('pass:', student2.ifPassed());
-
-// student3.displayStudentInfo();
-// console.log('pass:', student3.ifPassed());
-
-
-// Create a FlightBooking class that represents a flight booking system. Implement
-// methods to search for available flights based on destination and date, reserve
-// seats for customers, manage passenger information, and generate booking
-// confirmations.
-
-// class FlightBooking{
-//     constructor(destination, date,reservedSeats,passangerInformation, bookingConfirmation){
-
-//     }
-// }
-                
 
 
